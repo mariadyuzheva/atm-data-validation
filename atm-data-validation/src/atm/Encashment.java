@@ -1,16 +1,10 @@
 package atm;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Encashment {
-	
-	public enum Operation {
-		unloadingDispensing,
-		loadingDispensing,
-		unloadingDeposit,
-		loadingDeposit
-	}
-	
+
 	private Operation[] operations = new Operation[] {
 		Operation.unloadingDispensing,
 		Operation.loadingDispensing,
@@ -21,12 +15,12 @@ public class Encashment {
 	public Date dateAndTime;
 	public int atmNumber;
 	public Operation operation;
-	public Cassette[] cassettes;
+	public ArrayList<Cassette> cassettes;
 	public int rejectSum;
 	public int depositSum;
 	public int currencyCode;
 	
-	public Encashment(Date dateAndTime, int atmNumber, int operationCode, Cassette[] cassettes, 
+	public Encashment(Date dateAndTime, int atmNumber, int operationCode, ArrayList<Cassette> cassettes, 
 			int rejectSum, int depositSum, int currencyCode) {
 		this.dateAndTime = dateAndTime;
 		this.atmNumber = atmNumber;
