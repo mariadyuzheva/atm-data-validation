@@ -16,9 +16,9 @@ public class EncashmentParser {
 	
 	public Encashment parseEncashment() {
 		var fields = data.split("\t");
-		var cassettes = new ArrayList<Cassette>();
+		var cassettes = new ArrayList<EncashmentCassette>();
 		for (int i = 0; i < cassettesCount; i++) {
-			cassettes.add(new Cassette(fields[i + 3], fields[i + 3 + cassettesCount]));
+			cassettes.add(new EncashmentCassette(fields[i + 3], fields[i + 3 + cassettesCount]));
 		}
 		
 		var simpleDateFormat = new SimpleDateFormat(dateFormat);

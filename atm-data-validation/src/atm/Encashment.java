@@ -15,12 +15,12 @@ public class Encashment {
 	public Date dateAndTime;
 	public int atmNumber;
 	public Operation operation;
-	public ArrayList<Cassette> cassettes;
+	public ArrayList<EncashmentCassette> cassettes;
 	public int rejectSum;
 	public int depositSum;
 	public int currencyCode;
 	
-	public Encashment(Date dateAndTime, int atmNumber, int operationCode, ArrayList<Cassette> cassettes, 
+	public Encashment(Date dateAndTime, int atmNumber, int operationCode, ArrayList<EncashmentCassette> cassettes, 
 			int rejectSum, int depositSum, int currencyCode) {
 		this.dateAndTime = dateAndTime;
 		this.atmNumber = atmNumber;

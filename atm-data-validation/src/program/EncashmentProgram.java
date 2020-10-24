@@ -1,4 +1,4 @@
-package atm;
+package program;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,8 +6,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+import atm.Encashment;
+import atm.EncashmentParser;
 
-public class Program {
+public class EncashmentProgram {
 	
 	public static void main(String[] args) {
 		var encashments = new HashMap<Integer, ArrayList<Encashment>>();
