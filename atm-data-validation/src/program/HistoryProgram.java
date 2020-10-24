@@ -8,7 +8,7 @@ import java.util.HashMap;
 import atm.ATMStateParser;
 import atm.CassettesSetForCurrency;
 
-public class Program {
+public class HistoryProgram {
 	public static void main(String[] args){
 		String fileName = "atmHistory20200430110813.csv";
 		var ATMStates = new HashMap<Integer, HashMap<Integer, CassettesSetForCurrency>>();
@@ -26,5 +26,6 @@ public class Program {
 		catch(IOException ex) {
 			System.out.println(ex.getMessage());
 		}
+		System.out.println("done");
 	}
 }
