@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 import atm.Encashment;
-import atm.EncashmentParser;
+import parsing.EncashmentParser;
 
 public class EncashmentProgram {
 	

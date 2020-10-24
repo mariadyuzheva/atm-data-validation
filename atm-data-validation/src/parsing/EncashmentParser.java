@@ -1,9 +1,12 @@
-package atm;
+package parsing;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+import atm.Encashment;
+import atm.EncashmentCassette;
 
 public class EncashmentParser {
 	private static final String dateFormat = "dd.MM.yyyy HH:mm:ss";
